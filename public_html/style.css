@@ -586,7 +586,7 @@ small {
 }
 
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-.active, .accordion:hover {
+.active-faq, .accordion:hover {
   background-color: rgba(66, 66, 66, 0.5);
 }
 
@@ -615,8 +615,8 @@ small {
   margin-left: 5px;
 }
 
-.active:after {
- 
+.active-faq:after {
+  content: "\2796"; /* Unicode character for "minus" sign (-) */
 }
 
 /* Section page4 */
