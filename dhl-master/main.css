@@ -1,0 +1,583 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+/* Modificators */ 
+
+.btn {
+    padding: 17px 30px;
+    border: 2px solid #ffffff;   
+    border-radius: 25px;
+    background-color: transparent;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 30px;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    text-decoration: none;
+    color: #fff;      
+}
+
+.btn:hover {
+    box-shadow: 0 10px 18px rgba(255, 204, 0, 0.4);
+    border-radius: 25px;
+    background-color: #ffcc00;
+    color: #ba0000;
+    font-weight: bold;
+    border: 2px solid #ffcc00;
+    transition: all 0.5s ease;      
+}
+
+/* Style for icons */
+
+.fa-angle-down {
+    color: #ffffff;
+    letter-spacing: 0.42px;
+    padding: 0 5px;
+}
+
+.fa-users {
+    padding: 0 8px;
+}
+
+.fa-angle-right {
+    color: #ba0000;
+}
+
+.fa-angle-right--yellow {
+    color: #ffcc00;
+}
+
+.fa-angle-down--red {
+    color: #ba0000;
+}
+
+/* Header */ 
+
+.header-menu-container {
+    background-color: #ba0000; 
+    height: 50px;
+    padding: 0 15%; 
+}
+
+
+.header-menu {
+    padding: 12px 0px;
+        
+}
+
+.header-menu a {
+    text-decoration: none;
+    padding-left: 30px; 
+    color: #ffffff;
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.contact, .country {
+    float: right;
+}
+
+
+.main-menu-container {
+    box-sizing: border-box;
+    background-color: #ffcc00;
+    height: 120px;
+    padding: 0 15%; 
+}
+
+.main-menu-container nav {
+    display: flex;
+    flex-flow: row nowrap;
+    align-content: center;
+    padding: 20px;
+
+}
+
+.main-menu-container img {
+    align-self: center;
+    margin-right: 100px;
+}
+
+.main-menu-nav {
+    margin: 0;
+    padding-top: 20px;
+    list-style: none;
+}
+
+.main-menu-nav li {
+    display: inline-block;
+    margin-right: 25px;
+    
+}
+
+.main-menu-nav a {
+    text-decoration: none;
+    color: #ba0000;
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    text-transform: uppercase;  
+}
+
+.main-menu-nav a:hover {
+    font-weight: bold;
+    padding-bottom: 58px;
+    border-bottom: 2px solid #ba0000;
+}
+
+
+.slider-container {
+    box-sizing: border-box;
+    overflow: hidden;
+    background-image: linear-gradient(45deg, #ba0000 20%, rgba(255, 204, 0, 0.01) 99%, rgba(255, 204, 0, 0) 100%), url(img/Layer_3.png);
+    background-size: cover;
+    height: 100vh;
+    width: 99vw;
+    padding: 0 15%;   
+}
+
+.slider-container h1 {
+    padding-top: 15%;
+    margin: 0;
+    width: 440px;
+    height: 155px;
+    color: #ffffff;
+    font-family: Poppins;
+    font-size: 70px;
+    font-weight: 400;
+    line-height: 80px;
+    letter-spacing: 2.1px;
+}
+
+.horizontal-line {
+    display: none;
+    border-top: 2px solid #ffcc00;
+    width: 100px;
+}
+
+.slider-subtitle {
+    color: #ffcc00;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0.6px;
+    margin-top: 50px;
+}
+
+.slider-tagline {
+    margin-top: 45px;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+    
+}
+
+.slider-tagline--yellow {
+    color: #ffcc00;
+    padding: 0 28px 0 28px;
+}
+
+.slider-buttons {
+    margin-top: 41px;
+    
+}
+
+.slider-buttons a {
+    margin-right: 40px;
+    text-decoration: none;
+    color: #fff;    
+}
+
+
+.service {
+    position: relative;
+    padding: 140px 15% 0;
+}
+
+.services {
+    display: flex;
+    justify-content: space-between;
+}
+
+.service-item {
+    margin-bottom: 100px;
+    max-width: 270px;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0.48px;
+    font-weight: 500;
+}
+
+.service h1 {
+    position: relative;
+    z-index: 2;
+    color: #ba0000;
+    font-size: 50px;
+    font-weight: 400;
+    line-height: 80px;
+    letter-spacing: 1.5px;
+}
+
+.behind-title {
+    position: absolute;
+    top: 45px;
+    z-index: 1;
+    color: #f8f8f8;
+    font-size: 150px;
+    font-weight: 500;
+    line-height: 80px;
+    text-transform: uppercase;
+    letter-spacing: 4.5px;
+}
+
+.service-item__title {
+    display: block;
+    margin-top: 20px;
+    color: #ba0000;
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;  
+    text-decoration: none;
+}
+
+.service-item__subtitle {
+    margin-top: 10px;
+    color: #777777;
+}
+
+.service-item__read-more {
+    display: block;
+    margin-top: 10px;
+    color: #222222;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.service-explore-item {
+    position: relative;
+    padding: 30px 0 0 30px;
+    flex-shrink: 0;
+    width: 270px;
+    height: 339px;
+    background-color: #ba0000;
+}
+
+.service-explore-item__title {
+    color: #ffffff;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.service-explore-item__subtitle {
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0.48px;
+    padding-top: 20px;
+}
+
+.service-explore-item__location-block {
+    background-color: #9d0000;;
+    height: 50px;
+    border: none;
+    margin-top: 30px;
+    color: #ffffff;
+}
+
+.location-block__button {
+    position: absolute;
+    top: 178px;
+    right: 24px;
+    box-sizing: border-box;
+    padding: 15px 0 0 15px;
+    display: inline-block;
+    background-color: #ffcc00;
+    height: 53px;
+    width: 50px;
+
+}
+
+.service-explore-item button {
+    margin-top: 25px;
+    padding: 10px 40px;
+    background-color: #ffcc00;
+    color: #ba0000;
+    border: none;
+    font-weight: bold;
+}
+
+
+
+
+.advantages {
+    position: relative;
+    padding: 0 15%;
+    height: 700px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: linear-gradient(to top, rgba(255, 204, 0, 0.514) 0%, rgba(0, 0, 0, 0.719) 100%, transparent 50%), url(img/Layer_6.jpg);
+}
+
+.advantages__title {  
+    position: absolute;
+    top: 100px; 
+    font-size: 50px;
+    font-weight: 600;
+    line-height: 80px;
+    letter-spacing: 1.5px;
+    color: #ffffff;
+}
+
+.advantages-items {
+    padding-top: 500px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.advantages-item {
+    margin-right: 20px;
+    width: 370px;
+    height: 400px;
+    background-color: #ffffff;
+    box-shadow: 0 10px 18px rgba(191, 191, 191, 0.4);
+
+}
+
+.advantages-item__title {
+    margin-left: 40px;
+    color: #ba0000;
+    font-size: 20px;
+    letter-spacing: 0.6px;
+    font-weight: bold;
+}
+
+.advantages-item__list {
+    list-style: none;
+    color: #777777;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+
+.tabs-and-img-block {
+    display: flex;
+    justify-content: space-between;
+    margin: 300px 15%;
+}
+
+.tabs {
+    position: relative;
+    width: 300px;
+    height: 535px;
+	display:flex;
+}
+
+input[type="radio"] { 
+    display: none; 
+}
+
+.tab, .tab-title {
+    display: inline-block;
+}
+
+.tab :checked + .tab-title {
+    position: relative;
+    background: #ba0000;
+    color: #ffffff;
+    letter-spacing: 1.4px;
+    font-weight: 500;
+    top: 1px;
+    z-index: 1;
+}
+
+.tab-content {
+    background-color: #ba0000;
+    box-sizing: border-box;
+    padding: 10px;
+    border: none; 
+}
+
+.tab :checked + .tab-title + .tab-content {
+    display: block;
+}
+
+.tab {
+    background-color: #ba0000;
+}
+
+.tab label{
+	width:200px;
+}
+
+.tab-title {    
+    padding: 10px;
+    color: #ba0000;
+    background: #ffcc00;
+    text-align: center;
+    border: none;    
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 1.4px;
+}
+
+.tab-content {
+    position: absolute;
+    left: 0;
+    box-sizing: border-box;
+    width: 100%;
+    display: none;
+    height: 460px;
+    width: 400px;
+}
+
+
+.football-guys {
+    position: relative;
+    border: 20px solid #ffcc00;
+    width: 390px;
+    height: 470px;
+    
+}
+
+.football-guys__img {
+    position: absolute;
+    top: 15px;
+    left: 20px;
+    background-image: linear-gradient(to top, #ffcc00 0%, rgba(255, 255, 255, 0) 100%);
+}
+
+.football-guys__img::after {
+    background-image: linear-gradient(to top, #ffcc00 0%, rgba(255, 255, 255, 0) 100%);
+}
+
+.excellence {
+    position: relative;
+    background-color: #ba0000;
+    padding: 80px 15%;
+    color: #ffffff;
+    line-height: 24px;  
+}
+
+.excellence__p {
+    max-width: 740px;
+    display: inline-block;   
+}
+
+
+
+.excellence__btn {
+    position: absolute;
+    display: inline-block;
+    border-radius: 30px;
+    background-color: #a00000;
+    border: none;
+    padding: 17px 30px;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 30px;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    text-decoration: none;
+    color: #fff;
+    top: 150px;
+    right: 15%;
+}
+
+.excellence__btn:hover {
+        box-shadow: 0 10px 18px rgba(255, 204, 0, 0.4);
+        background-color: #ffcc00;
+        color: #ba0000;
+        font-weight: bold;
+        transition: all 0.5s ease;      
+}
+
+.programms {
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 70px 15%;
+    
+}
+
+.programms-item {
+    border: 2px solid rgba(186, 0, 0, 0.1);
+    padding: 40px 15px;
+    background-color: #f9f9f9;
+    margin-right: 20px;
+    flex-grow: 0;
+}
+
+.programms-item:hover {
+    border: 2px solid #ba0000;  
+}
+
+footer {
+    position: relative;
+    height: 311px;
+    display: flex;
+}
+
+.line { 
+    width: 20px;
+    height: 311px;
+    background-color: #ba0000;
+}
+
+.nav-block__title {
+    color: #ba0000;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24px;
+    text-transform: uppercase;
+}
+
+.nav-block-footer {
+    display: inline-block;    
+}
+
+.nav-block-footer ul {
+    list-style: none;
+}
+
+.nav-block-footer a {
+    color: #777777;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.nav-block-footer a:hover {
+    color: #ffcc00; 
+}
+
+.line--yellow {   
+    background-color: #ffcc00;
+}
+
+.line--red {
+    position: absolute;
+    left: 0;
+}
+
+.footer__img-right, .line--yellow {
+    position: absolute;
+    right: 0;
+}
+
+.footer__img-right, .footer__img-left {
+    flex-grow: 0;
+}
